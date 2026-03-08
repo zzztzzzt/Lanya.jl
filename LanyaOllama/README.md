@@ -2,15 +2,19 @@
 
 <img src="https://github.com/zzztzzzt/lanya/blob/main/logo/logo-hue-one.webp" alt="lanya-logo" style="height: auto; width: auto;" />
 
-### Lanya Ollama support API.
-
 ## Basic Usage
+
+### Instantiating the Client
 
 ```julia
 using LanyaOllama
 
 client = OllamaClient()
+```
 
+### LLM Generate Reply
+
+```julia
 #=
 function generate() Parameters
 
@@ -24,5 +28,6 @@ temperature::Union{Float64, Nothing}`: ( Optional ) Controls randomness. Higher 
 
 top_p::Union{Float64, Nothing}`: ( Optional ) Nucleus sampling threshold. Higher values (up to 1.0) consider a wider range of tokens, increasing diversity
 =#
+
 result = generate(client, "YOUR_LLM_MODEL", "Hello! Who are you?", 1.8, 1.0)
 ```
