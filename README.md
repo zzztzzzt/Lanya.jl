@@ -6,4 +6,4 @@
 
 ## Ollama Integration
 
-### See this README : [https://github.com/zzztzzzt/Lanya.jl/tree/main/LanyaOllama/README.md](https://github.com/zzztzzzt/Lanya.jl/tree/main/LanyaOllama/README.md)
+### [https://github.com/zzztzzzt/Lanya.jl/tree/main/LanyaOllama](https://github.com/zzztzzzt/Lanya.jl/tree/main/LanyaOllama)
