@@ -1,9 +1,9 @@
 using LanyaOllama
 
-client = OllamaClient()
+client = LanyaOllama.OllamaClient()
 
 println("Generating Response...")
-result = generate(client, "llama3.1:8b", "Hello! Who are you?", 1.8, 1.0)
+result = LanyaOllama.generate(client, "llama3.1:8b", "Hello! Who are you?", 1.8, 1.0)
 
 if result !== nothing
     println("AI Response : ", result["response"])

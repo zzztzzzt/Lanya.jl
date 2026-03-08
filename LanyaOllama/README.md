@@ -9,12 +9,14 @@
 ```julia
 using LanyaOllama
 
-client = OllamaClient()
+client = LanyaOllama.OllamaClient()
 ```
 
 ### LLM Generate Reply
 
 ```julia
+using LanyaOllama
+
 #=
 function generate() Parameters
 
@@ -29,5 +31,5 @@ temperature::Union{Float64, Nothing}`: ( Optional ) Controls randomness. Higher 
 top_p::Union{Float64, Nothing}`: ( Optional ) Nucleus sampling threshold. Higher values (up to 1.0) consider a wider range of tokens, increasing diversity
 =#
 
-result = generate(client, "YOUR_LLM_MODEL", "Hello! Who are you?", 1.8, 1.0)
+result = LanyaOllama.generate(LanyaOllama.OllamaClient(), "YOUR_LLM_MODEL", "Hello! Who are you?", 1.8, 1.0)
 ```
