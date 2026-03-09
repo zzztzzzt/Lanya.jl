@@ -8,7 +8,7 @@
 
 ### [https://github.com/zzztzzzt/Lanya.jl/tree/main/LanyaOllama](https://github.com/zzztzzzt/Lanya.jl/tree/main/LanyaOllama)
 
-## Oxygen.jl Integration ( Rapidly Build Backend )
+## Oxygen.jl Integration ( Rrapidly Build Backend API )
 
 ## Lanya Main
 
