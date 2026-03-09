@@ -6,8 +6,8 @@ function generate_stream(
     client::OllamaClient,
     model::AbstractString,
     prompt::AbstractString;
-    temperature::Union{Float64,Nothing}=nothing,
-    top_p::Union{Float64,Nothing}=nothing,
+    temperature::Union{Float64,Nothing}=nothing, # 0.0 ~ 2.0 The higher the value, the more creative
+    top_p::Union{Float64,Nothing}=nothing, # 0.0 ~ 1.0 The higher the value, the more diverse the options
     on_chunk::F = (_)->nothing
 ) where {F}
 
@@ -80,7 +80,25 @@ function generate_stream(
         end
 
     catch e
-        if !(e isa EOFError)
+        is_eof = e isa EOFError
+        is_wrapped_eof = e isa HTTP.RequestError && begin
+            underlying = try
+                getfield(e, :error)
+            catch
+                nothing
+            end
+            underlying isa EOFError
+        end
+
+        if is_eof || is_wrapped_eof
+            if isnothing(final_done_chunk)
+                return _error_result(
+                    "upstream_error",
+                    "Ollama stream request failed";
+                    details=sprint(showerror,e)
+                )
+            end
+        else
             return _error_result(
                 "upstream_error",
                 "Ollama stream request failed";

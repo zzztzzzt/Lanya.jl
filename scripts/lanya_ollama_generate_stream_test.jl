@@ -28,11 +28,11 @@ if isnothing(result.error)
     if !isnothing(final)
         println("\nToken Statistic :")
         p_eval = get(final, "prompt_eval_count", "?")
-        eval = get(final, "eval_count", "?")
+        gen_eval = get(final, "eval_count", "?")
         duration = get(final, "total_duration", 0) / 1e9
         
         println("Prompt tokens: $p_eval")
-        println("Generation tokens: $eval")
+        println("Generation tokens: $gen_eval")
         println("Total Time: $(round(duration, digits=2)) second(s)")
     end
 else
