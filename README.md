@@ -1,18 +1,26 @@
-<div align="center">
-  <img src="https://github.com/zzztzzzt/lanya/blob/main/logo/logo.png" alt="lanya-logo" style="height: auto; width: auto;" />
+# Lanya.jl
 
-  <h1>Lanya.jl</h1>
-
-  <a href="https://julialang.org/"><img src="https://img.shields.io/badge/Julia-Language-9558B2?style=flat&logo=julia" alt="Julia"></a>
-  <a href="./LICENSE"><img src="https://img.shields.io/badge/License-View-blue.svg" alt="License"></a>
-  <a href="https://github.com/zzztzzzt/Lanya.jl"><img src="https://img.shields.io/badge/GitHub-Monorepo-181717?style=flat&logo=github" alt="Monorepo"></a>
-</div>
+[![GitHub last commit](https://img.shields.io/github/last-commit/zzztzzzt/Lanya.jl.svg)](https://github.com/zzztzzzt/Lanya.jl)
+[![GitHub repo size](https://img.shields.io/github/repo-size/zzztzzzt/Lanya.jl.svg)](https://github.com/zzztzzzt/Lanya.jl)
+[![Julia Version](https://img.shields.io/badge/Julia-v1.10+-9558B2?style=flat&logo=julia)](https://julialang.org/)
 
 <br>
 
-High-level prompt orchestration and AI logic for Julia.
+<div align="center">
+  <img src="https://github.com/zzztzzzt/lanya/blob/main/logo/logo.png?raw=true" alt="lanya-logo" style="height: 250px; width: auto;" />
+</div>
 
-`Lanya.jl` is the pure logic layer paired with the `LanyaOllama` backend. It manages prompt templates, dynamic persona routing, strict Retrieval-Augmented Generation (RAG) guardrails, and LLM-compatible tool schema generation for function-calling models such as Llama 3.1.
+### Lanya.jl : High-level prompt orchestration and AI logic for Julia.
+
+`Lanya.jl` is the pure logic layer paired with the `LanyaOllama` backend. It manages prompt templates, dynamic persona routing, strict Retrieval-Augmented Generation (RAG) guardrails, and LLM-compatible tool schema generation.
+
+## Project Dependencies Guide
+
+[![Julia](https://img.shields.io/badge/Julia-9558B2?style=for-the-badge&logo=julia&logoColor=white)](https://github.com/JuliaLang/julia)
+[![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)](https://github.com/ollama/ollama)
+[![Llama3.1](https://img.shields.io/badge/Llama3.1-0467DF?style=for-the-badge&logo=meta&logoColor=white)](https://github.com/meta-llama/llama)
+
+<br>
 
 ## Core Capabilities
 
