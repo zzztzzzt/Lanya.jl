@@ -1,0 +1,8 @@
+name = "Lanya"
+uuid = "24a109eb-a31e-4325-bac5-c7ffd3ea02e9"
+version = "0.1.0"
+authors = ["mmmssstttt <96172924+mmmssstttt@users.noreply.github.com>"]
+
+[deps]
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
