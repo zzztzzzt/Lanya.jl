@@ -1,14 +1,18 @@
-# Lanya.jl
+<div align="center">
+  <img src="https://github.com/zzztzzzt/lanya/blob/main/logo/logo.png" alt="lanya-logo" style="height: auto; width: auto;" />
 
-[Julia](https://julialang.org/)
-[License](./LICENSE)
-[Monorepo](https://github.com/zzztzzzt/Lanya.jl)
+  <h1>Lanya.jl</h1>
+
+  <a href="https://julialang.org/"><img src="https://img.shields.io/badge/Julia-Language-9558B2?style=flat&logo=julia" alt="Julia"></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/License-View-blue.svg" alt="License"></a>
+  <a href="https://github.com/zzztzzzt/Lanya.jl"><img src="https://img.shields.io/badge/GitHub-Monorepo-181717?style=flat&logo=github" alt="Monorepo"></a>
+</div>
+
+<br>
 
 High-level prompt orchestration and AI logic for Julia.
 
 `Lanya.jl` is the pure logic layer paired with the `LanyaOllama` backend. It manages prompt templates, dynamic persona routing, strict Retrieval-Augmented Generation (RAG) guardrails, and LLM-compatible tool schema generation for function-calling models such as Llama 3.1.
-
-Lanya logo
 
 ## Core Capabilities
 
