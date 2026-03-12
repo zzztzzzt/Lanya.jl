@@ -1,6 +1,6 @@
 # Lanya.jl
 
-<img src="https://github.com/zzztzzzt/lanya/blob/main/logo/logo.png" alt="lanya-logo" style="height: auto; width: auto;" />
+<img src="https://github.com/zzztzzzt/lanya/blob/main/logo/logo.webp" alt="lanya-logo" style="height: auto; width: auto;" />
 
 ### Light Weight Tool Chains / Prompt Templates for LLMs in Julia.
 
